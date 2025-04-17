@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balayogesh T | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #1e293b;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu-button {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      background: #2c3e50;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      z-index: 1100;
+      cursor: pointer;
+    }
+
+    #sidebar {
+      width: 240px;
+      background: #2c3e50;
+      color: #f9fafb;
+      position: fixed;
+      top: 0;
+      left: -240px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding-top: 4rem;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+      transition: left 0.3s ease;
+    }
+
+    #sidebar.active {
+      left: 0;
+    }
+
+    #sidebar a {
+      color: #fcd34d;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    #sidebar a:hover {
+      background: #34495e;
+    }
+
+    main {
+      margin-top: 4rem;
+      margin-left: 0;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow-y: auto;
+    }
+
+    header, section {
+      padding: 2rem;
+      max-width: 960px;
+      margin: auto;
+      width: 100%;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      border-radius: 0 0 16px 16px;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #f59e0b;
+      padding-left: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .grid-2 {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .project-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #2563eb;
+    }
+
+    .fade-in {
+      animation: fadeIn 0.8s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2c3e50;
+      color: white;
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+
+    .profile-pic {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fcd34d;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+
+  <div id="sidebar">
+    <a href="#" onclick="showSection('education')">Education</a>
+    <a href="#" onclick="showSection('skills')">Skills</a>
+    <a href="#" onclick="showSection('projects')">Projects</a>
+    <a href="#" onclick="showSection('certifications')">Certifications</a>
+    <a href="#" onclick="showSection('contact')">Contact</a>
+  </div>
+
+  <main>
+    <header>
+      <h1>Balayogesh T</h1>
+      <p>A motivated Electronics and Communication Engineer with expertise in electronic systems, circuit design, and communication technologies. Proficient in C, C++, Python, and MATLAB. Passionate about embedded systems and developing innovative engineering solutions.</p>
+    </header>
+
+    <section id="education" class="content-section" style="display:none;">
+      <h2 class="section-title">Education</h2>
+      <div class="card">
+        <p><strong>Bachelor of Engineering - ECE</strong><br>Kumaraguru College of Technology (2021 – 2025)<br>CGPA: 7.2</p>
+        <p><strong>Class XII</strong><br>Government Higher Secondary School (2020 – 2021)<br>Percentage: 85.93%</p>
+        <p><strong>Class X</strong><br>Government Higher Secondary School (2018 – 2019)<br>Percentage: 78.4%</p>
+      </div>
+    </section>
+
+    <section id="skills" class="content-section" style="display:none;">
+      <h2 class="section-title">Skills</h2>
+      <div class="grid grid-2">
+        <div class="card">Python</div>
+        <div class="card">C++</div>
+        <div class="card">C Programming</div>
+        <div class="card">MATLAB (Beginner)</div>
+        <div class="card">HTML (Basic)</div>
+        <div class="card">MS Word (Basic)</div>
+        <div class="card">MS Excel (Basic)</div>
+        <div class="card">Management Skills</div>
+        <div class="card">Critical Thinking</div>
+        <div class="card">Communication Skills</div>
+      </div>
+    </section>
+
+    <section id="projects" class="content-section" style="display:none;">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="project-title">Low Power Latch Comparator</div>
+          <p>Designed a low-power latch comparator with a self-cascode pre-amplifier to improve gain and power efficiency. Used Cadence for design and validation, making it ideal for analog-to-digital systems in battery-powered applications.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="content-section" style="display:none;">
+      <h2 class="section-title">Certifications</h2>
+      <ul>
+        <li>Internship - Turnon Energy India Pvt. Ltd (Manufacturing & QC)</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="content-section" style="display:none;">
+      <h2 class="section-title">Contact</h2>
+      <p>Email: <a href="mailto:2003balayogesh@gmail.com">2003balayogesh@gmail.com</a></p>
+      <p>Phone: +91 94425 32590</p>
+      <p>Location: Erode, Tamil Nadu, India</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Balayogesh T. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
+    }
+
+    function showSection(id) {
+      document.querySelectorAll('.content-section').forEach(section => {
+        section.style.display = 'none';
+        section.classList.remove('fade-in');
+      });
+      const target = document.getElementById(id);
+      target.style.display = 'block';
+      if (id === 'certifications') {
+        target.classList.add('fade-in');
+      }
+      document.getElementById('sidebar').classList.remove('active');
+    }
+  </script>
+</body>
+</html>
