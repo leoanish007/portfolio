@@ -316,8 +316,6 @@ body {
 </table>
 </div>
 
-
-
 <div class="contact">
   
 
@@ -329,21 +327,44 @@ body {
 
 </div>
 
-
 </div>
-
-
-
-  
-
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
-<script src="/portfolioquery.js">
+<script>
+$(document).ready(function(){
+    $("#btn-e").click(function(){
+      $(".frame").toggle(400);
 
+
+});
+   // $("#btn-e").mouseleave(function(){
+   //   $(".frame").hide(400)});
+
+    $("#btn-p").click(function(){
+
+        $(".projects").toggle(400);
+    });
+
+    //$("#btn-p").mouseleave(function(){        $(".projects").hide(400);});
+
+    $("#btn-c").click(function(){
+        $(".certifications").toggle(400);
+        
+    });
+   // $("#btn-c").mouseleave(function(){$(".certifications").hide(400);});
+
+
+    $("#btn-co").click(function(){
+        $(".contact").toggle(400);
+
+    });
+
+});
 </script>
 
 </html>
+
 
 
 
