@@ -34,15 +34,4 @@ $(document).ready(function(){
         $(".contact").toggle(400);
 
     });
-
-
-
-
-
-
-
-
-
-
-  
 });
