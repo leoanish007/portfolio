@@ -355,3 +355,7 @@ textarea::placeholder {
 #send-btn{
     color: #fff;
 }
+
+.navbar-brand{
+    padding-left: 160px;
+}
