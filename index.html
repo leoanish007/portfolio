@@ -105,16 +105,18 @@
 </section>
 </center>
 <section class="contact-from" id="contact-content">
-   <form>
+   <form id="form">
 
     <h2>Contact Details</h2><br>
       <input type="text" placeholder="Type your name here" id="username" required name="name">
       <input type="email" placeholder="Type your email address" id="email" required name="email">
       <input type="number" placeholder="Type your mobile number" id="phone" required name="number">
       <textarea placeholder="Message" id="description" required name="description"></textarea>
-      <button id="send-btn" type="submit">Send</button>
-      
+        <a id="connect-btn" href="https://wa.me/918438207155?text=Hello%20Anish!">
+            <button>Send</button>
+        </a>
    </form>
+
 </section>
 </body>
 
@@ -150,23 +152,5 @@
 
 </body>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script>
-$(document).ready(function() {
-    $("#send-btn").click(function() {
-        
-        var UserName = `${e.target.name.value}`;
-        var Email = `${e.target.email.value}`;
-        var Contact = `${e.target.number.value}`;
-        var Description = `${e.target.description.value}`;
-        // Fixed: Added missing comma before Description for proper formatting
-        var result = UserName + "," + Email + "," + Contact + "," + Description;
-        
-        // Fixed: Variable name case sensitivity (was "EncodedMessage" but used as "encodedMessage")
-        var encodedMessage = encodeURIComponent(result);
-        var url = 'https://wa.me/918438207155?text=' + encodedMessage;
-        // Try to open in a new tab/window
-        window.open(url, "_blank");
-    });
-});
-</script>
+
 </html>
