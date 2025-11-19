@@ -152,8 +152,7 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script>
 $(document).ready(function() {
-    $("#send-btn").click(function(e) {
-        e.preventDefault();
+    $("#send-btn").click(function() {
         
         var UserName = `${e.target.name.value}`;
         var Email = `${e.target.email.value}`;
