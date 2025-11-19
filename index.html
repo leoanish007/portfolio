@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/My-Projects/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">ANISH</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link active" href="#home-content">Home</a>
+        <a class="nav-link active" href="#about-content">About</a>
+        <a class="nav-link active" href="#services-content">Services</a>
+        <a class="nav-link active" href="#contact-content">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HOME SECTION ================= -->
+<div class="home-container">
+    <div id="home-content">
+
+        <h1>Hello, I'm ANISH</h1>
+
+        <strong>
+            <p>
+                I'm a Freelance Web Designer based in Salem, India.
+                I strive to build immersive and beautiful web applications through carefully crafted code and user-centric design.
+            </p>
+        </strong>
+
+        <a id="connect-btn" href="https://wa.me/918438207155?text=Hello%20Anish!">
+            <button>Connect to Me</button>
+        </a>
+
+    </div>
+</div>
+
+<!-- ================= ABOUT SECTION ================= -->
+<div class="about-container" id="about-content">
+    <div class="about-class">
+      <h1>I am Professional Web Designer</h1>
+      <p>
+        I design and develop services for customers, specializing in creating modern,
+        stylish web designs. My passion is to build fully responsive websites.
+      </p>
+      <p>
+        I create modern websites and web services with clean and elegant layout design, 
+        and complete responsiveness.
+      </p>
+    </div>
+</div>
+
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services-content">
+
+  <div class="row">
+
+    <div class="left col-md-6">
+      <div class="boxleft">
+        <h1>What I do!</h1>
+        <p>I specialize in creating modern, responsive, and visually engaging website designs that provide seamless interaction across all devices. My focus is on crafting clean layouts, intuitive navigation, and attractive visuals that enhance user engagement.</p>
+        <p>My design process blends creativity with strategic thinking to deliver websites that not only look stunning but also function smoothly, ensuring a delightful and effective experience for every user.</p>
+      </div>
+    </div>
+
+    <div class="right col-md-6 text-md-start text-center">
+
+      <div id="box1">
+        <h4 style="margin-left:15px;padding-top:10px;">Web Layout Design</h4>
+        <p style="padding:8px;margin-left:10px">I design clean, modern website layouts that present content clearly. Each section is arranged to guide users naturally and improve readability. My focus is on visual balance and creating an intuitive browsing experience.</p>
+      </div>
+
+      <div id="box2">
+        <h4 style="margin-left:15px;padding-top:10px;">Responsive Design</h4>
+        <p style="padding:8px;margin-left:10px">I make sure every website looks great on all screen sizes by creating fully responsive layouts. Whether someone is on a mobile, tablet, or desktop, they get a consistent design, easy navigation, and a smooth, seamless experience.</p>
+      </div>
+
+      <div id="box3">
+        <h4 style="margin-left:15px;padding-top:10px;">Interaction & Animation Design</h4>
+        <p style="padding:8px;margin-left:10px">I enhance websites with subtle animations and interactive elements that make the experience more engaging and lively. These touches improve feedback, boost usability, and help the interface feel more intuitive and enjoyable to use.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<center>
+<section class="resume">
+    <a href="/My-Projects/My-Resume.pdf" download><Button id="cv-btn">Download CV</Button></a>
+</section>
+</center>
+<section class="contact-from" id="contact-content">
+   <form>
+
+    <h2>Contact Details</h2><br>
+      <input type="text" placeholder="Type your name here" id="username" required name="name">
+      <input type="email" placeholder="Type your email address" id="email" required name="email">
+      <input type="number" placeholder="Type your mobile number" id="phone" required name="number">
+      <textarea placeholder="Message" id="description" required name="description"></textarea>
+      <button id="send-btn" type="submit">Send</button>
+      
+   </form>
+</section>
+</body>
+
+<!-- ================= FOOTER ================= -->
+<footer class="main-footer">
+  <div class="footer-container">
+
+    <h2 class="footer-title">ANISH</h2>
+    <p class="footer-subtitle">
+      Freelance Web Designer | Creating Modern & Responsive Websites
+    </p>
+
+    <div class="footer-links">
+      <a href="#home-content">Home</a>
+      <a href="#about-content">About</a>
+      <a href="#services-content">Services</a>
+      <a href="https://wa.me/918438207155">WhatsApp</a>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://wa.me/918438207155"><i class="bi bi-whatsapp"></i></a>
+      <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+      <a href="mailto:anish@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+    </div>
+
+    <p class="footer-copy">
+      © 2025 ANISH — All Rights Reserved
+    </p>
+
+  </div>
+</footer>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function() {
+    $("#send-btn").click(function(e) {
+        e.preventDefault();
+        
+        var UserName = `${e.target.name.value}`;
+        var Email = `${e.target.email.value}`;
+        var Contact = `${e.target.number.value}`;
+        var Description = `${e.target.description.value}`;
+        // Fixed: Added missing comma before Description for proper formatting
+        var result = UserName + "," + Email + "," + Contact + "," + Description;
+        
+        // Fixed: Variable name case sensitivity (was "EncodedMessage" but used as "encodedMessage")
+        var encodedMessage = encodeURIComponent(result);
+        var url = 'https://wa.me/918438207155?text=' + encodedMessage;
+        // Try to open in a new tab/window
+        window.open(url, "_blank");
+    });
+});
+</script>
+</html>

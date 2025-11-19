@@ -1,0 +1,357 @@
+/* ================= FOOTER ================ */
+.main-footer {
+    background: #111;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    text-align: center;
+}
+
+.footer-title {
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.footer-subtitle {
+    color: #ccc;
+    font-size: 15px;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    margin: 0 12px;
+    color: #ff9800;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-copy {
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+/* Responsive Footer */
+@media (max-width: 600px) {
+    .footer-title {
+        font-size: 22px;
+    }
+    .footer-links a {
+        margin: 0 8px;
+    }
+    .footer-subtitle,
+    .footer-copy {
+        font-size: 13px;
+    }
+}
+
+/* ================= NAVBAR ================ */
+#navbarNavAltMarkup {
+    justify-content: flex-end;
+    padding-right: 120px;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.nav-link {
+    border: none;
+    border-radius: 10px;
+    width: 90px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+}
+
+/* ================= HOME SECTION ================ */
+.home-container {
+    background: url(/My-Projects/photo-1518655048521-f130df041f66.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+#home-content {
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: #ff9800;
+}
+
+button {
+    border: 1px solid rgb(2, 0, 7);
+    border-radius: 10px;
+    background: #000;
+    color: white;
+    height: 40px;
+    width: 150px;
+    transition: 0.3s ease-in;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* ================= ABOUT SECTION ================ */
+.about-container {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-class {
+    background: rgb(114, 114, 114);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 900px;
+}
+
+/* ================= SERVICES SECTION ================ */
+.services {
+    background: rgb(232, 232, 232);
+    padding: 50px 20px;
+}
+
+.left {
+    padding: 40px;
+}
+
+.boxleft {
+    padding: 20px;
+    border-radius: 20px;
+    background: white;
+}
+
+.boxleft:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgb(255, 166, 0);
+    transform: scale(1.01);
+}
+
+#box1,
+#box2,
+#box3 {
+    background: white;
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding-bottom: 15px;
+}
+
+#box1:hover,
+#box2:hover,
+#box3:hover {
+    cursor: text;
+    box-shadow: -5px 0px 0px rgb(165, 8, 233);
+}
+
+/* ================= CONTACT SECTION ================ */
+.contact {
+    padding: 50px 20px;
+    background-color: rgb(232, 232, 232);
+}
+
+.contact-box-left {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 120px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    padding-left: 10px;
+}
+
+#resume {
+    margin-bottom: 20px;
+}
+
+/* ================= RESPONSIVE FIXES ================ */
+@media (max-width: 992px) {
+    #navbarNavAltMarkup {
+        padding-right: 0;
+        justify-content: center;
+    }
+    .nav-link {
+        width: auto;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        height: auto;
+        padding: 50px 0;
+    }
+    #home-content {
+        width: 100%;
+    }
+    .left,
+    .right {
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    #box1,
+    #box2,
+    #box3 {
+        margin: auto;
+        width: 100%;
+    }
+    .contact {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 14px;
+    }
+    button {
+        width: 120px;
+    }
+    .boxleft {
+        padding: 15px;
+    }
+}
+#cv-btn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact-from form {
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.contact-from input,
+.contact-from textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact-from input:focus,
+.contact-from textarea:focus {
+    border-color: #6a5acd; /* violet border on focus */
+    box-shadow: 0 0 8px rgba(106, 90, 205, 0.3);
+}
+
+.contact-from textarea {
+    height: 120px;
+    resize: none;
+}
+.contact-from {
+    background: linear-gradient(135deg, #1b1b1f, #2b2b3d);
+    padding: 40px 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.main-footer {
+    background: #111;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.footer-subtitle {
+    color: #ccc;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.footer-links {
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: #ddd;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-social a {
+    color: #ccc;
+    margin: 0 12px;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    color: white;
+}
+
+.footer-copy {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #777;
+}
+
+#send-btn{
+    color: #fff;
+}
